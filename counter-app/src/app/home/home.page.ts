@@ -5,7 +5,7 @@ import {IonHeader, IonToolbar, IonTitle, IonContent, IonButton} from '@ionic/ang
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton],
+  imports: [IonHeader,IonContent, IonButton],
 })
 export class HomePage {
   num:number=0;
