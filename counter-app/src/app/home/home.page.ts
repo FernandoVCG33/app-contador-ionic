@@ -17,4 +17,10 @@ export class HomePage {
       chevronDownOutline
     })
   }
+  up(){
+    this.num++;
+  }
+  down(){
+    this.num--;
+  }
 }
