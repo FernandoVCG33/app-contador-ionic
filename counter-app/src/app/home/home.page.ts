@@ -21,6 +21,12 @@ export class HomePage {
     this.num++;
   }
   down(){
-    this.num--;
+    if (this.num != 0){
+      this.num--;
+    }
+    else{
+      this.num=0;
+    }
+
   }
 }
