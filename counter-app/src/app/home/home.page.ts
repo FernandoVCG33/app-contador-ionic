@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonFooter, IonIcon} from '@ionic/angular/standalone';
+import {addIcons} from "ionicons";
+import {chevronDownOutline, chevronUpOutline} from "ionicons/icons";
 
 @Component({
   selector: 'app-home',
@@ -9,5 +11,10 @@ import {IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonFooter, IonIc
 })
 export class HomePage {
   num:number=0;
-  constructor() {}
+  constructor() {
+    addIcons({
+      chevronUpOutline,
+      chevronDownOutline
+    })
+  }
 }
