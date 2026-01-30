@@ -27,6 +27,9 @@ export class HomePage {
       const num= +conterPreferences.value;
       if(isNaN(num) || num<0 || num>10 ){
         this.num=0;
+        this.saveNum();
+      }else{
+        this.num=num;
       }
     }
   }
