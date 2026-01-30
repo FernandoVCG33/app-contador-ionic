@@ -22,7 +22,7 @@ export class HomePage {
 
   async ionViewWillEnter(){
     console.log("ionViewWillEnter");
-    const conterPreferences = await Preferences.get({ key: 'name' });
+    const conterPreferences = await Preferences.get({ key: this.key_number });
     if(conterPreferences.value){
       const num= +conterPreferences.value;
       if(isNaN(num) || num<0 || num>10 ){
@@ -41,6 +41,8 @@ export class HomePage {
     else{
       this.num=0;
     }
-
+  }
+  saveNum(){
+    Preferences.set({key: 'name', value: 'Max'});
   }
 }
