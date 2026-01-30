@@ -43,6 +43,6 @@ export class HomePage {
     }
   }
   saveNum(){
-    Preferences.set({key: 'name', value: 'Max'});
+    Preferences.set({key: this.key_number, value: this.num.toString()});
   }
 }
