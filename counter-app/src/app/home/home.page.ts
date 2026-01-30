@@ -12,6 +12,7 @@ import {Preferences} from "@capacitor/preferences";
 })
 export class HomePage {
   num:number=0;
+  private readonly key_number:string= "ddr_key_number" ;
   constructor() {
     addIcons({
       chevronUpOutline,
