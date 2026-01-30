@@ -24,6 +24,9 @@ export class HomePage {
     const conterPreferences = await Preferences.get({ key: 'name' });
     if(conterPreferences.value){
       const num= +conterPreferences.value;
+      if(isNaN(num) || num<0 ){
+        this.num=0;
+      }
     }
   }
 
