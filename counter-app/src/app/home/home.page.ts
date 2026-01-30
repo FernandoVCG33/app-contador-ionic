@@ -17,6 +17,10 @@ export class HomePage {
       chevronDownOutline
     })
   }
+  ionViewWillEnter(){
+    console.log("ionViewWillEnter");
+  }
+
   up(){
     this.num++;
   }
