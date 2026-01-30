@@ -21,7 +21,10 @@ export class HomePage {
 
   async ionViewWillEnter(){
     console.log("ionViewWillEnter");
-    const { value } = await Preferences.get({ key: 'name' });
+    const conterPreferences = await Preferences.get({ key: 'name' });
+    if(conterPreferences.value){
+
+    }
   }
 
   up(){
