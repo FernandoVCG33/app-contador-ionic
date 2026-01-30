@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {IonHeader, IonContent, IonButton, IonFooter, IonIcon} from '@ionic/angular/standalone';
 import {addIcons} from "ionicons";
 import {chevronDownOutline, chevronUpOutline} from "ionicons/icons";
+import {Preferences} from "@capacitor/preferences";
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,10 @@ export class HomePage {
       chevronDownOutline
     })
   }
-  ionViewWillEnter(){
+
+  async ionViewWillEnter(){
     console.log("ionViewWillEnter");
+    const { value } = await Preferences.get({ key: 'name' });
   }
 
   up(){
