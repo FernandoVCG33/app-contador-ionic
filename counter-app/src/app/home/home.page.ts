@@ -33,10 +33,12 @@ export class HomePage {
 
   up(){
     this.num++;
+    this.saveNum();
   }
   down(){
     if (this.num != 0){
       this.num--;
+      this.saveNum();
     }
     else{
       this.num=0;
