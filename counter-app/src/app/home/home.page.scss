@@ -1,5 +1,5 @@
 #container{
-  background-color: #939394;
+  background-color: white;
   width: 100%;
   height: 100%;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 ion-header, ion-footer{
-  background-color: #939394;
+  background-color: white;
 }
 :host-context(.plt-android) ion-header.ios{
   margin-top: 20px;
@@ -16,5 +16,5 @@ ion-header, ion-footer{
 #container strong{
   font-weight: 700;
   font-size: 44px;
-  color: white;
+  color: black;
 }
