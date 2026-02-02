@@ -37,11 +37,13 @@ export class HomePage {
   up(){
     this.num++;
     this.saveNum();
+    console.log(this.num);
   }
   down(){
     if (this.num != 0){
       this.num--;
       this.saveNum();
+      console.log(this.num);
     }
     else{
       this.num=0;
