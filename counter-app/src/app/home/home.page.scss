@@ -1,3 +1,7 @@
+--root {
+  --ion-background-color: #e8e8e8;
+  --ion-text-color: #101010;
+}
 #container{
   background-color: white;
   width: 100%;
@@ -7,7 +11,7 @@
   align-items: center;
 }
 ion-header, ion-footer{
-  background-color: white;
+  background-color: var(--ion-background-color);
   border: none;
 }
 :host-context(.plt-android) ion-header.ios{
@@ -17,5 +21,5 @@ ion-header, ion-footer{
 #container strong{
   font-weight: 700;
   font-size: 44px;
-  color: black;
+  color: var(--ion-text-color);
 }
