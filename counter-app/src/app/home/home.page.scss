@@ -8,6 +8,7 @@
 }
 ion-header, ion-footer{
   background-color: white;
+  border: none;
 }
 :host-context(.plt-android) ion-header.ios{
   margin-top: 20px;
