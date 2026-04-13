@@ -46,6 +46,11 @@ h2{
   color: green;
 }
 .btnPlus{
+  --background-hover: #1ab053;
+  /* 3. Color al hacer clic o tocar la pantalla (Activated - clave para celulares) */
+  --background-activated: #13853e;
+  /* 4. Color cuando navegas con el teclado (Tab) */
+  --background-focused: #1ab053;
   --background: #2dd36f; /* Color de fondo del botón (ej. verde) */
   --color: white;        /* Color del ícono y texto (blanco) */
   --border-radius: 100%; /* Si quieres redondear un poco los bordes */
