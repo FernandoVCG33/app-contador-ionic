@@ -4,7 +4,15 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   <ion-button class="btnPlus" expand="block" (click)="up()" [disabled]="num===10">
-    <ion-icon name="chevron-up-outline"></ion-icon>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M4.929 4.929a10 10 0 1 1 14.141 14.141a10 10 0 0 1 -14.14 -14.14zm8.071 4.071a1 1 0 1 0 -2 0v2h-2a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0 -2h-2v-2z" />
+    </svg>
   </ion-button>
   <div id="container">
     <strong>  {{num}} </strong>

@@ -46,7 +46,12 @@ h2{
   color: green;
 }
 .btnPlus{
-  /* Usas las variables de Ionic, no background-color normal */
-  --background: #8e24aa;
-  --color: white;
+  --background: #2dd36f; /* Color de fondo del botón (ej. verde) */
+  --color: white;        /* Color del ícono y texto (blanco) */
+  --border-radius: 100%; /* Si quieres redondear un poco los bordes */
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
