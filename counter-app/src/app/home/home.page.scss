@@ -1,4 +1,8 @@
-
+ion-header, ion-content ,ion-footer {
+  background-color: white;
+  --ion-background-color: white; /* Fuerza a Ionic a rellenar el fondo de blanco */
+  border: none;
+}
 #container{
   background-color: white;
   width: 100%;
