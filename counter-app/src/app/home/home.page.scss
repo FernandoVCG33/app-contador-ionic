@@ -15,13 +15,22 @@ ion-header, ion-footer{
   margin-top: 20px;
   background-color: white;
 }
+#container{
+  display: flex;
+  flex-flow: column wrap;
+}
 #container strong{
   font-weight: 700;
   font-size: 80px;
   color: black;
 }
-#texto{
-  font-size: 5px;
+#container #texto {
+  font-size: 14px; /* Cambié 5px a 14px porque 5px es casi ilegible en pantallas */
   color: red;
+  font-weight: 200;
+}
+#container #textoMaximo{
+  font-size: 14px; /* Cambié 5px a 14px porque 5px es casi ilegible en pantallas */
+  color: green;
   font-weight: 200;
 }
