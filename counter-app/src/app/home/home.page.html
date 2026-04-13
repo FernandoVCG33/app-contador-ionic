@@ -1,11 +1,11 @@
 <ion-header class="ion-padding">
-  <ion-button expand="block" (click)="up()" [disabled]="num===10">
+  <h2>Contador Ionic</h2>
+
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-button class="btnPlus" expand="block" (click)="up()" [disabled]="num===10">
     <ion-icon name="chevron-up-outline"></ion-icon>
   </ion-button>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-
   <div id="container">
     <strong>  {{num}} </strong>
     @if (num===0){

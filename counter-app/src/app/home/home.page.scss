@@ -34,3 +34,15 @@ ion-header, ion-footer{
   color: green;
   font-weight: 200;
 }
+ion-header{
+  background-color: #F0FBF6;
+  height: 70px;
+}
+h2{
+  color: green;
+}
+.btnPlus{
+  /* Usas las variables de Ionic, no background-color normal */
+  --background: #8e24aa;
+  --color: white;
+}
